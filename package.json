@@ -1,0 +1,20 @@
+{
+  "name": "totalpriceincurrency",
+  "version": "1.0.0",
+  "description": "First and Simplest task implementation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dehimer/totalpriceincurrency.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dehimer/totalpriceincurrency/issues"
+  },
+  "homepage": "https://github.com/dehimer/totalpriceincurrency#readme"
+}
