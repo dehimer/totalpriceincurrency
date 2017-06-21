@@ -1,4 +1,4 @@
-const helpers = require('./helpers');
+import helpers from './helpers';
 
 const selectedCart = [
     { price: 20 },
