@@ -1,3 +1,5 @@
+const helpers = require('./helpers');
+
 const selectedCart = [
     { price: 20 },
     { price: 45 },
@@ -13,12 +15,11 @@ const currentsPairsWithRubles = {
     JPY: 52.4968
 };
 
-
-const totalCartPrice = selectedCart.map(selected => selected.price).reduce((total, price) => total + price, 0);
+const totalCartPrice = selectedCart.map(helpers.getPrice).reduce(helpers.sum, 0);
 const totalCartPriceEachCurrency = Object.keys(currentsPairsWithRubles)
     .map(currencyName => ({
         name: currencyName,
-        value: currentsPairsWithRubles[currencyName]*totalCartPrice,
+        value: helpers.getProp(currentsPairsWithRubles, currencyName) * totalCartPrice,
     }))
     .reduce((result, priceInCurrency) => {
         result[priceInCurrency.name] = priceInCurrency.value;
