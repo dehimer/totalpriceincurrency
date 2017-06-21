@@ -1,1 +1,1 @@
-# totalpriceincurrency
+First and Simplest task implementation
