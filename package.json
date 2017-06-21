@@ -4,6 +4,7 @@
   "description": "First and Simplest task implementation",
   "main": "main.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/dehimer/totalpriceincurrency/issues"
   },
-  "homepage": "https://github.com/dehimer/totalpriceincurrency#readme"
+  "homepage": "https://github.com/dehimer/totalpriceincurrency#readme",
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  }
 }
